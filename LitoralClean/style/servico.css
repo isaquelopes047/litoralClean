@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+
+.containerServico{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(24, 132, 204);
+}
+
+/* CONTAINER DO TITULO */
+.containerTitleServico{
+    width: auto;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerTitleServico P{
+    font-size: 60px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    border-bottom: 5px solid #ffffff;
+}
+/* FIM */
+
+.containerConteudoServico{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.cardConteudoServico{
+    width: 20%;
+    height: auto;
+}
+.containerImg{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerInfoServico{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 30px;
+}
+.containerInfoServico p{
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    color: #fff;
+}
+
+.containerHigienização{
+    width: 70vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.containerTitleHigienizacao{
+    width: 100%;
+    height: auto;
+}
+.containerTitleHigienizacao p{
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 60px;
+    color: #fff;
+}
+.containerImgImper{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgIMper{
+    width: 70vw;
+    height: 200px;
+    background-image: url('../img/imper.png');
+    background-size: cover;
+    background-position: center center;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.containerinfoImper{
+    width:70vw;
+    height: 200px;
+    display: flex;
+}
+
+.containerIconImper{
+    width: 10%;
+    height: 100px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.containerInfoImperText{
+    width: 80%;
+    margin-top: 10px;
+}
+.containerInfoImperText p{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color: #fff;
+}
+
+@media (max-width: 600px)
+{
+    .containerConteudoServico{
+        flex-direction: column;
+    }
+    .cardConteudoServico{
+        width: 100%;
+    }
+    .containerInfoServico{
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: center;
+        padding: 10px;
+    }
+    .containerHigienização{
+        width: 100vw;
+    }
+    .imgIMper{
+        width: 90vw;
+    }
+    .containerTitleHigienizacao p{
+        margin-left: 10px;
+    }
+    .containerImgImper{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 10px;
+    }
+    .containerinfoImper{
+        width: 100vw;
+    }
+    .containerIconImper{
+        display: none;
+    }
+    .containerInfoImperText{
+        width: 100vw;
+        padding: 10px;
+    }
+    .containerInfoImperText p{
+        font-size: 18px;
+    }
+}

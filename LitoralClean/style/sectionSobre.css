@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+
+/* About section */
+.containerSection1{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerTitleSobre{
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.titulo{
+    width: 100%;
+    height: auto;
+}
+.titleSobre{
+    border-bottom: 5px solid black;
+    font-size: 70px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    margin-left: 60px;
+    margin-top: -60px;
+}
+.subtitleSobre{
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin: 60px 0 0 60px;
+}
+.contaierSobreImg{
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerTitleSobre img{
+    width: 700px;
+}
+
+@media (max-width: 600px)
+{
+    .containerSection1{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .containerTitleSobre{
+        width: 100vw;
+    }
+    .containerSobreImg{
+        width: 100vw;
+    }
+    .titleSobre{
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+    .subtitleSobre{
+        font-size: 15px;
+        margin: 20px;
+    }
+    .containerTitleSobre img{
+        width: 350px;
+    }
+    .top{
+        margin-top: 50px;
+    }
+}
