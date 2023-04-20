@@ -7,7 +7,27 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: rgb(24, 132, 204);
+    background: linear-gradient(213deg, #249daa, #1c70d2, #5b90ce, #093f7d, #093f7d);
+    background-size: 1000% 1000%;
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 
 /* CONTAINER DO TITULO */
@@ -19,7 +39,7 @@
     align-items: center;
 }
 .containerTitleServico p{
-    font-size: 60px;
+    font-size: 40px;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     color: #fff;
@@ -88,7 +108,7 @@
 .imgIMper{
     width: 70vw;
     height: 200px;
-    background-image: url('../img/imper.png');
+    background-image: url('../img/primer-plano-gotas-agua-sobre-superficie-blanca.jpg');
     background-size: cover;
     background-position: center center;
     margin-top: 30px;
@@ -107,7 +127,7 @@
     margin-top: 10px;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
 
 
@@ -124,7 +144,7 @@
 @media (max-width: 600px)
 {
     .containerTitleServico p{
-        font-size: 40px;
+        font-size: 30px;
     }
     .containerConteudoServico{
         flex-direction: column;
@@ -142,7 +162,8 @@
         width: 100vw;
     }
     .imgIMper{
-        width: 90vw;
+        width: 98vw;
+        margin-left: 0;
     }
     .containerTitleHigienizacao p{
         margin-left: 10px;

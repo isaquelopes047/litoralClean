@@ -72,7 +72,7 @@ body{
 .containerMobile{
     width: 100vw;
     height: 40px;
-    background: rgb(153, 153, 153);
+    background: rgb(255, 255, 255);
     display: flex;
     justify-content: flex-start;
     align-items: center;

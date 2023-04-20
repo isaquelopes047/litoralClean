@@ -1,8 +1,16 @@
-body{
+body {
     overflow-x: hidden;
 }
 
-.containerWhiteZap{
+@media screen and (max-width: 600px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+}
+
+.containerWhiteZap {
     border: 1px solid #cecece;
     width: 60px;
     height: 60px;
@@ -11,14 +19,14 @@ body{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-
+    z-index: 99999999;
     margin-bottom: 30px;
     position: fixed;
-	bottom: 30px;
-	left: calc(100vw - 150px);
+    bottom: 30px;
+    left: calc(100vw - 150px);
 }
 
-.containerGreenZap{
+.containerGreenZap {
     width: 50px;
     height: 50px;
     background-color: #0e991a;
@@ -28,14 +36,18 @@ body{
     border-radius: 50%;
 }
 
-.containerGreenZap img{
+.containerGreenZap img {
     width: 40px;
-
+    animation: rotate-image 3s infinite;
 }
 
-@media (max-width: 600px)
-{
-    .containerWhiteZap{
+@keyframes rotate-image {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 600px) {
+    .containerWhiteZap {
         left: calc(100vw - 90px);
     }
 }
