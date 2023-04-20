@@ -32,21 +32,23 @@
     width: 50%;
     height: 200px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 .containerContatoCidade p{
     font-family: 'Inter', sans-serif;
     font-size: 22px;
-    margin-left: 30px;
+    margin-left: 10px;
 }
 
 .containerRedes{
     width: 50%;
     height: 200px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 .containerItem{
     width: 100%;
@@ -54,6 +56,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.containerItem p{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
 }
 .containerMaps{
     width: 100vw;
@@ -69,13 +75,40 @@ iframe{
 
 @media (max-width: 600px)
 {
+    .containerContato{
+        margin-top: 50px;
+        width: auto;
+    }
     .containerBlocosContato{
         flex-direction: column;
     }
     .containerContatoCidade{
         width: 100%;
+        flex-direction: column;
     }
     .containerRedes{
         width: 100%;
+    }
+    .containerRedes{
+        flex-direction: column;
+    }
+    .containerContatoCidade img{
+        display: none;
+    }
+    .containerContatoCidade p{
+        font-size: 15px;
+        margin-left: 0px;
+    }
+    .containerItem{
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .containerItem p{
+        margin-left: 3px;
+        font-size: 15px;
+    }
+    .containerItem img{
+        margin-left: 10px;
+        width: 30px;
     }
 }

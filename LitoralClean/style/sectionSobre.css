@@ -3,7 +3,7 @@
 /* About section */
 .containerSection1{
     width: 100vw;
-    height: 100vh;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,6 +47,9 @@
 
 @media (max-width: 600px)
 {
+    .titleSobre{
+        font-size: 40px;
+    }
     .containerSection1{
         flex-direction: column;
         justify-content: flex-start;

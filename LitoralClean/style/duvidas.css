@@ -99,6 +99,7 @@
     }
     .modalOpen p{
         margin: 10px 20px 0 10px;
+        font-size: 18px;
     }
     .headercards{
         border: none;  

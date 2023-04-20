@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+
+.containerRodape{
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1E6FBA;
+}
+.containerTextoRodape{
+    width: 50%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.containerTextoRodape p{
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    margin-left: 35px;
+}
+.containerTextoRodape p:nth-child(1){
+    font-size: 35px;
+}
+.containerTextoRodape p:nth-child(2){
+    font-size: 18px;
+}
+
+.containerImg{
+    width: 50%;
+    height: 300px;
+}

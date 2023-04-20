@@ -18,7 +18,7 @@
     justify-content: center;
     align-items: center;
 }
-.containerTitleServico P{
+.containerTitleServico p{
     font-size: 60px;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
@@ -37,6 +37,10 @@
 .cardConteudoServico{
     width: 20%;
     height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .containerImg{
     width: 100%;
@@ -119,6 +123,9 @@
 
 @media (max-width: 600px)
 {
+    .containerTitleServico p{
+        font-size: 40px;
+    }
     .containerConteudoServico{
         flex-direction: column;
     }
@@ -158,5 +165,8 @@
     }
     .containerInfoImperText p{
         font-size: 18px;
+    }
+    .containerTitleServico{
+        font-size: 10px;
     }
 }

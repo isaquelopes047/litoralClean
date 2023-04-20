@@ -5,15 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="./style/default.css">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/sectionSobre.css">
     <link rel="stylesheet" href="./style/servico.css">
     <link rel="stylesheet" href="./style/duvidas.css">
     <link rel="stylesheet" href="./style/contato.css">
+    <link rel="stylesheet" href="./style/rodape.css">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <title>Litoral Clean</title>
 </head>
 <body>
+
+    <div class="containerWhiteZap">
+        <div class="containerGreenZap">
+            <img src="./icon/tell.png" alt="">
+        </div>
+    </div>
 
     <!-- Navbar -->
     <nav class="navContainer">
@@ -89,7 +100,7 @@
 
     <!-- Tela homePage -->
     <div class="containerHomePage">
-        <div class="containerBlur">
+        <div class="containerBlur" data-aos="fade-down">
             <div class="containerTitle">
                 <p>HIPERMEABILIZAÇÃO E <br>HIGIENIZAÇÃO DE ESTOFADOS</p>
             </div>
@@ -100,7 +111,7 @@
     </div>
 
     <!-- Seção de sobre nos -->
-    <div class="containerSection1">
+    <div class="containerSection1" data-aos="fade-right">
         <div class="containerTitleSobre">
             <div class="titulo">
                 <p class="titleSobre">SOBRE</p>
@@ -109,18 +120,18 @@
                 <p class="subtitleSobre">The About page is the core description of your website. Here is where you let clients know what your website is about. You can edit all of this text and replace it with what you want to write. For example you can let them know how long you have been in business, what makes your company special, what are its core values and more.Edit your About page from the Pages tab by clicking the edit button.</p>
             </div>
         </div>
-        <div class="containerTitleSobre top">
+        <div class="containerTitleSobre top" data-aos="fade-left">
             <img src="./img/imgSobre.png" alt="">
         </div>
     </div>
 
     <!-- Seção de servições oferecidos-->
     <div class="containerServico">
-        <div class="containerTitleServico">
+        <div class="containerTitleServico" data-aos="fade-down">
             <p>SERVIÇOS</p>
         </div>
         <div class="containerConteudoServico">
-            <div class="cardConteudoServico">
+            <div class="cardConteudoServico" data-aos="fade-right">
                 <div class="containerImg">
                     <img src="./img/servico1.png" alt="">
                 </div>
@@ -128,7 +139,7 @@
                     <p>limpeza de sofás, cadeiras e estofados residencias</p>
                 </div>
             </div>
-            <div class="cardConteudoServico">
+            <div class="cardConteudoServico" data-aos="fade-up">
                 <div class="containerImg">
                     <img src="./img/servico2.png" alt="">
                 </div>
@@ -136,7 +147,7 @@
                     <p>limpeza complete de veiculos carpete, bancos e teto</p>
                 </div>
             </div>
-            <div class="cardConteudoServico">
+            <div class="cardConteudoServico" data-aos="fade-left">
                 <div class="containerImg">
                     <img src="./img/servico3.png" alt="">
                 </div>
@@ -165,12 +176,12 @@
     </div>
 
     <!-- Seção de mais informações e duvidas comuns -->
-    <div class="containerMaisInfos">
+    <div class="containerMaisInfos" data-aos="fade-right">
         <div class="containerInfosTitles">
             <p class="infosPragrafo">DUVIDAS GERAIS</p>
         </div>
 
-        <div class="cardInfos">
+        <div class="cardInfos" data-aos="fade-right" data-aos-delay="500">
             <div class="headercards">
                 <div class="headericon">
                     <img src="./icon/time.png" alt="">
@@ -184,7 +195,7 @@
             </div>
         </div>
 
-        <div class="cardInfos open2">
+        <div class="cardInfos open2" data-aos="fade-right" data-aos-delay="1000">
             <div class="headercards">
                 <div class="headericon">
                     <img src="./icon/secagem.png" alt="">
@@ -198,7 +209,7 @@
             </div>
         </div>
 
-        <div class="cardInfos open3">
+        <div class="cardInfos open3" data-aos="fade-right" data-aos-delay="1500">
             <div class="headercards">
                 <div class="headericon">
                     <img src="./icon/garantia.png" alt="">
@@ -212,7 +223,7 @@
             </div>
         </div>
 
-        <div class="cardInfos open4">
+        <div class="cardInfos open4"data-aos="fade-right" data-aos-delay="2000"> 
             <div class="headercards">
                 <div class="headericon">
                     <img src="./icon/alergia.png" alt="">
@@ -232,14 +243,16 @@
 
     </div>
 
+    <!-- Seção de contato -->
     <div class="containerContato">
         <div class="containerTitleContato">
             <p class="lineTitle">CONTATO</p>
         </div>
         <div class="containerBlocosContato">
             <div class="containerContatoCidade">
-                <p>Barra Velha</p>
-                <p>Santa Catarina</p>
+                <img src="./icon/local.png" alt="">
+                <p>Barra Velha,</p>
+                <p>Santa Catarina,</p>
                 <p>Brasil</p>
             </div>
             <div class="containerRedes">
@@ -249,11 +262,11 @@
                 </div>
                 <div class="containerItem">
                     <img src="./icon/phone.png" alt="">
-                    <p>litoralclean@litoralclean.com.br</p>
+                    <p>(47) 99946-8230</p>
                 </div>
                 <div class="containerItem">
                     <img src="./icon/isnta.png" alt="">
-                    <p>litoralclean@litoralclean.com.br</p>
+                    <p>@_LitoralClean</p>
                 </div>
             </div>
         </div>
@@ -262,7 +275,18 @@
         </div>
     </div>
 
+    <div class="containerRodape">
+        <div class="containerTextoRodape">
+            <p>Litoral Clean</p>
+            <p>© Copyright 2023 todos os direitos reservados</p>
+        </div>
+        <div class="containerImg">
 
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./scripts/AOS.js"></script>
     <script src="./scripts/menuSuperior.js"></script>
     <script src="./scripts/duvidas.js"></script>
 </body>
