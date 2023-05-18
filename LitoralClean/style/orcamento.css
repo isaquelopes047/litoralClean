@@ -50,6 +50,42 @@
     padding: 3px;
 }
 
+.containerOrcamentoLink{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.containerOrcamentoLink p{
+    font-family: Nunito;
+    font-size: 20px;
+}
+
+.containerButton{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background: rgb(15, 162, 40);
+}
+.containerOrcamentoLink a{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(15, 162, 40);
+}
+.containerButton p{
+    color: #fff;
+    padding: 10px 30px;
+}
+
 /* .containerOrcamento a {
     list-style: none;
     text-decoration: none;
